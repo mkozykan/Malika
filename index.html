@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Малика Калиаскарова</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        #neurographics .neuro-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        #neurographics .neuro-container img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 16px;
+        }
+
+        #neurographics .neuro-container p {
+            font-size: 1.8rem;
+            flex: 1;
+        }
+
+        #about {
+            background-color: #fffaf5;
+            padding: 5rem 0;
+        }
+
+        #about h3 {
+            font-size: 2.8rem;
+            color: #d4af37;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.4rem;
+            line-height: 1.9;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        /* ========== Стили для секции "Марафон" (с увеличенным заголовком и подготовкой для просмотра) ========== */
+        #marathon .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 5rem 1rem;
+            background-color: #f0f8ff;
+        }
+
+        #marathon h3 {
+            font-size: 2.5rem;
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        #marathon .review-gallery {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 0.5rem;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        #marathon .review-gallery > img,
+        #marathon .review-gallery > div {
+            display: flex;
+            gap: 0.5rem;
+            align-items: flex-start;
+            width: auto;
+        }
+
+        #marathon .review-gallery img {
+            width: 100px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+
+        #marathon .review-gallery > div img {
+            width: 100px;
+            cursor: pointer;
+        }
+
+        #marathon .marathon-text {
+            font-size: 2rem;
+            line-height: 1.6;
+            margin-top: 1.5rem;
+        }
+
+        #marathon .btn {
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            #marathon .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #marathon .review-gallery {
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            #marathon .review-gallery img,
+            #marathon .review-gallery > div img {
+                width: 80px;
+                margin-right: 0.5rem;
+                margin-bottom: 0;
+            }
+
+            #marathon .review-gallery > div {
+                gap: 0.25rem;
+            }
+
+            #marathon .marathon-text {
+                text-align: center;
+            }
+        }
+
+        /* ========== Стили для секции "Медитации" (с кнопкой заказа) ========== */
+        #meditations h3 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+            color: #d4af37;
+        }
+
+        #meditations p {
+            font-size: 1.8rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        #meditations h4 {
+            font-size: 2rem;
+            color: #d4af37;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+
+        #meditations .btn {
+            margin: 0.5rem auto;
+            display: block;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        #meditations > div > p {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        #meditations > div {
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Малика Калиаскарова</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sessions">Сессии</a></li>
+                    <li><a href="#marathon">Марафон</a></li>
+                    <li><a href="#neurographics">Нейрографика</a></li>
+                    <li><a href="#meditations">Медитации</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Врата к внутренней свободе</h2>
+            <p>Энергопрактики, марафоны, нейрографика и медитации — для твоего роста и гармонии</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container about-container">
+            <h3>Обо мне</h3>
+            <div class="about-content">
+                <div class="about-images">
+                    <img src="1.jpg" alt="Фотография обо мне 1">
+                    <img src="2.jpg" alt="Фотография обо мне 2">
+                </div>
+                <div class="about-text">
+                    <p>
+                        Два года я консультировала по астрологии — помогала людям разбираться в себе и своей судьбе. Но в моей жизни перемены происходили с тяжестью. Вроде всё было понятно, но жить по старым установкам не хотелось, хоть моя жизнь и была со стороны выше среднего. Я ощущала, что мне не хватает какого-то важного пазла, даже духовное просветление на Бали не дали его.<br><br>
+
+                        После первого сеанса Access Bars и Access Facelift я ощутила глубокое расслабление, а моё акне начало уходить. Мои мысли и желания стали сбываться легко и непринуждённо, например, с 6 лет мечтая побывать в Австралий собраться туда за месяц. Так начал раскрываться мой настоящий дар и как жизнь в Южной Африке стало вкладом. <br><br>
+
+                        Во время сессии ко мне пришла идея методики «Бессознательное сознание» — мягкого и бережного способа через разговор выявлять истинные паттерны поведения и реакции, а затем расставлять все по полочкам на бессознательном уровне.<br><br>
+
+                        Результаты меня просто потрясли — насколько глубоко это меняет жизни моих клиентов. Среди них были те, кто смог избавиться от зависимости от таблеток и даже от опухоли. Это работа, которая действительно меняет судьбы.<br><br>
+
+                        Если ты готов(а) начать путь трансформации и вернуть гармонию в жизнь — я здесь, чтобы помочь.
+
+                        Больше на моем телеграмм канале
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="text-align: center; padding-bottom: 3rem;">
+        <a href="https://t.me/+w_DEXci4IuMzMmFk" class="btn" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.5rem;">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.63 11.63 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+            </svg>
+            Телеграм-канал
+        </a>
+    </div>
+
+<section id="marathon" class="section">
+    <div class="container marathon-container">
+        <h3 style="text-align: center;">Марафон</h3>
+        <div class="marathon-content">
+            <div class="review-gallery">
+                <img src="отзывы 1.jpg" alt="Отзыв 1">
+                <img src="отзывы 2.jpg" alt="Отзыв 2">
+                <img src="отзывы 3.jpg" alt="Отзыв 3">
+                <img src="отзывы 4.jpg" alt="Отзыв 4">
+            </div>
+            <div class="marathon-text">
+                <p class="marathon-text">Исследование сознания. 3 зум звонка, перевернувшие мышление и жизни участников.</p>
+                <a href="https://wa.me/77759691722?text=Здравствуйте!%20Я%20хочу%20приобрести%20записи%20зум-звонков%20по%20марафону%20«Исследование%20сознания»" class="btn" target="_blank" rel="noopener">Приобрести записи</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="neurographics" class="section light">
+        <div class="container">
+            <h3>Нейрографика</h3>
+            <div class="neuro-container">
+                <p>Всеми нашумевшая нейрографика, но я решила сделать ее более эффективной — не просто прорисовать свою цель, а именно добавить туда ещё желаемое, чтобы путь к получению загаданного был именно таким, каким вы хотите.</p>
+                <img src="https://images.a-a-ah.ru/uploads/items/128673/141162/large_5bb3f5ea0557b063150303.jpg" alt="Нейрографика">
+            </div>
+        </div>
+    </section>
+
+    <section id="meditations" class="section">
+        <div class="container">
+            <h3>Медитации</h3>
+            <p style="font-size: 1.6rem;">Погрузись в пространство тишины и ясности. Эти медитации созданы для того, чтобы ты мог(ла) расслабиться, соединиться с собой и позволить внутреннему свету мягко вести тебя. Здесь ты найдёшь практики для восстановления энергии, отпускания лишнего и наполнения любовью к себе.</p>
+            <div style="margin-top: 2rem;">
+                <h4>Индивидуальные медитации</h4>
+                <p style="font-size: 1.4rem; line-height: 1.7;">
+                    Ты можешь заказать персональный пакет из медитаций под твои запросы. 
+                </p>
+                <a href="https://wa.me/77759691722?text=Здравствуйте!%20Я%20хочу%20заказать%20пакет%20индивидуальных%20медитаций." class="btn" target="_blank" rel="noopener">Заказать пакет индивидуальных медитаций</a>
+            </div>
+            <a href="https://youtube.com/playlist?list=PLpv2vUDdQ3hjiSzb_OsSfa9Pxilc1r66u&si=YO10iviCnv4A-tmi" class="btn" target="_blank" rel="noopener">Слушать бесплатно</a>
+        </div>
+    </section>
+
+    <footer id="contacts">
+        <div class="container">
+            <h3>Контакты</h3>
+            <p>Свяжитесь со мной удобным способом:</p>
+            <a href="https://wa.me/77759691722" class="btn" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/malikaknows" class="btn" target="_blank" rel="noopener">Telegram</a>
+            <a href="mailto:mkozykan@gmail.com" class="btn">Email</a>
+            <p style="margin-top: 2rem; font-size: 0.9rem; color: #888;">© 2025 Малика Калиаскарова — все права защищены</p>
+        </div>
+    </footer>
+
+    <div id="imageModal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9);">
+        <span style="position: absolute; top: 15px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; transition: 0.3s;" onclick="closeModal()">×</span>
+        <img class="modal-content" id="modalImage" style="margin: auto; display: block; width: 80%; max-width: 700px;">
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('#marathon .review-gallery img');
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeBtn = document.querySelector('#imageModal span');
+
+        images.forEach(img => {
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        });
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        closeBtn.onclick = closeModal;
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
